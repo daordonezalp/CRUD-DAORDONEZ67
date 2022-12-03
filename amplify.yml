@@ -3,15 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm run dev
+        - npm start 
     # IMPORTANT - Please verify your build commands
     build:
       commands: []
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
+    baseDirectory: /client
     files:
-      - '**/*'
+      - '**/client'
   cache:
     paths:
       - node_modules/**/*
