@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+<<<<<<< HEAD
 
         - npm i
 
@@ -11,6 +12,12 @@ frontend:
       commands: 
         - cd client
         - npm start
+=======
+        - npm ci
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands: []
+>>>>>>> 00d0c64c14f5f2f4776bdb48579771c029839208
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
